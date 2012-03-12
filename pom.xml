@@ -1,0 +1,86 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>eve-casino</groupId>
+  <artifactId>eve-casino</artifactId>
+  <version>1.0</version>
+  <packaging>war</packaging>
+  <name>eve-casino</name>
+  
+  <properties>
+  	<spring.version>3.1.1.RELEASE</spring.version>
+  	<jackson.version>1.9.5</jackson.version>
+  </properties>
+  
+  <dependencies>
+	<!-- Spring -->
+	<dependency>
+	  <groupId>org.springframework</groupId>
+	  <artifactId>spring-webmvc</artifactId>
+	  <version>${spring.version}</version>
+	</dependency>
+	
+	<!-- JSTL -->
+	<dependency>
+		<groupId>jstl</groupId>
+		<artifactId>jstl</artifactId>
+		<version>1.2</version>
+	</dependency>
+	
+	<!-- Jackson -->
+	<dependency>
+	  <groupId>org.codehaus.jackson</groupId>
+	  <artifactId>jackson-core-lgpl</artifactId>
+	  <version>${jackson.version}</version>
+	</dependency>
+	<dependency>
+	  <groupId>org.codehaus.jackson</groupId>
+	  <artifactId>jackson-mapper-lgpl</artifactId>
+	  <version>${jackson.version}</version>
+	</dependency>	
+	
+	<!-- DAO -->
+	<dependency>
+	  <groupId>commons-dbcp</groupId>
+	  <artifactId>commons-dbcp</artifactId>
+	  <version>1.4</version>
+	</dependency>
+	<dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-jdbc</artifactId>
+		<version>${spring.version}</version>
+	</dependency>
+	<dependency>
+		<groupId>mysql</groupId>
+		<artifactId>mysql-connector-java</artifactId>
+		<version>5.1.18</version>
+		<scope>provided</scope>
+	</dependency>
+	
+	<!-- Logging -->
+	<dependency>
+		<groupId>log4j</groupId>
+		<artifactId>log4j</artifactId>
+		<version>1.2.16</version>
+	</dependency>
+	
+	<!-- Test -->
+	<dependency>
+		<groupId>org.springframework</groupId>
+		<artifactId>spring-test</artifactId>
+		<version>${spring.version}</version>
+		<scope>test</scope>
+	</dependency>
+	<dependency>
+	  <groupId>junit</groupId>
+	  <artifactId>junit</artifactId>
+	  <version>4.10</version>
+	  <scope>test</scope>
+	</dependency>
+	<dependency>
+	  <groupId>org.easymock</groupId>
+	  <artifactId>easymock</artifactId>
+	  <version>3.1</version>
+	  <scope>test</scope>
+	</dependency>	
+  </dependencies>
+</project>
