@@ -14,6 +14,10 @@
 		<script type="text/javascript" src="<c:url value="/resources/js/json2.js"/>"></script>
 		<script type="text/javascript" src="<c:url value="/resources/js/underscore-min.js"/>"></script>
 		<script type="text/javascript" src="<c:url value="/resources/js/backbone-min.js"/>"></script>
+		
+		<script id="spaceTemplate" type="text/x-handlebars-template">
+			<div style="color: {{color}}" class="rouletteSpace">{{name}}</div>
+		</script>
 	</head>
 	
 	<body>
