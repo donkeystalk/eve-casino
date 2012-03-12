@@ -18,7 +18,13 @@
 	
 	<body>
 		<div class="container">
-			
+			<div class="span-16">
+			</div>
+			<div class="span-8">
+				<div class="rouletteTable">
+					
+				</div>
+			</div>
 		</div>
 		<script type="text/javascript" src="<c:url value="/resources/bb/application.js" />"></script>
 	</body>
