@@ -22,6 +22,10 @@ public class TestRouletteSpace {
 	@Test
 	public void testJSONOutput() throws JsonGenerationException, JsonMappingException, IOException
 	{
-		logger.info(mapper.writeValueAsString(RouletteSpaceEnum.DOUBLE_ZERO));
+		RouletteSpace space = new RouletteSpace();
+		space.setColor("black");
+		space.setId(1);
+		space.setName("0");
+		logger.info(mapper.writeValueAsString(space));
 	}
 }
