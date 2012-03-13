@@ -9,10 +9,12 @@ import javax.sql.DataSource;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.RowMapper;
+import org.springframework.stereotype.Repository;
 
 import eve.casino.models.RouletteSpace;
 import eve.casino.utils.ClassPathResourceUtil;
 
+@Repository
 public class JdbcRouletteRepo implements RouletteRepo{
 
 	private JdbcTemplate jdbcTemplate;
@@ -23,8 +25,8 @@ public class JdbcRouletteRepo implements RouletteRepo{
 
 		public RouletteSpace mapRow(ResultSet rs, int rowNum) throws SQLException {
 			RouletteSpace space = new RouletteSpace();
-			space.setColor(rs.getString("space_color"));
-			space.setName(rs.getString("space_name"));
+			space.setColor(rs.getString("color"));
+			space.setName(rs.getString("name"));
 			return space;
 		}
 		

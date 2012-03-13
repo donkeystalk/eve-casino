@@ -1,2 +1,2 @@
-SELECT roulette_space_id, space_name, space_color
+SELECT roulette_spaces_id, name, color
 FROM roulette_spaces
